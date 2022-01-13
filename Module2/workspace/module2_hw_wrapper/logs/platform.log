@@ -1,0 +1,1422 @@
+TRACE::2022-01-13.15:14:14::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:14::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:14::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:14::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:14:14::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:14::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:14:14::SCWPlatform::Do not have an existing db opened. 
+TRACE::2022-01-13.15:14:17::SCWPlatform::Opened new HwDB with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:17::SCWWriter::formatted JSON is {
+	"platformName":	"module2_hw_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"module2_hw_wrapper",
+	"platHandOff":	"/thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2/module2_hw_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/module2_hw_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	""
+}
+TRACE::2022-01-13.15:14:17::SCWWriter::formatted JSON is {
+	"platformName":	"module2_hw_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"module2_hw_wrapper",
+	"platHandOff":	"/thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2/module2_hw_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/module2_hw_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"module2_hw_wrapper",
+	"systems":	[{
+			"systemName":	"module2_hw_wrapper",
+			"systemDesc":	"module2_hw_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"module2_hw_wrapper"
+		}]
+}
+TRACE::2022-01-13.15:14:17::SCWPlatform::Boot application domains not present, creating them
+TRACE::2022-01-13.15:14:17::SCWDomain::checking for install qemu data   : 
+TRACE::2022-01-13.15:14:17::SCWDomain:: Using the QEMU Data from install at  : /thayerfs/apps/xilinx/Vitis/current/data/emulation/platforms/zynq/sw/a9_standalone/qemu/
+TRACE::2022-01-13.15:14:17::SCWDomain:: Using the QEMU args  from install at  : /thayerfs/apps/xilinx/Vitis/current/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+TRACE::2022-01-13.15:14:17::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:17::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:17::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:17::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:14:17::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:17::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:14:17::SCWPlatform::Trying to set the existing hwdb with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:17::SCWPlatform::Opened existing hwdb module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:17::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-01-13.15:14:17::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:17::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:17::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:17::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:14:17::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:17::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:14:17::SCWPlatform::Trying to set the existing hwdb with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:17::SCWPlatform::Opened existing hwdb module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:17::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-01-13.15:14:17::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:17::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:17::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:17::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:14:17::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:17::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:14:17::SCWPlatform::Trying to set the existing hwdb with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:17::SCWPlatform::Opened existing hwdb module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:17::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-01-13.15:14:17::SCWPlatform::Boot application domain added for zynq_fsbl
+TRACE::2022-01-13.15:14:17::SCWPlatform::Generating the sources  .
+TRACE::2022-01-13.15:14:17::SCWBDomain::Generating boot domain sources.
+TRACE::2022-01-13.15:14:17::SCWBDomain:: Generating the zynq_fsbl Application.
+TRACE::2022-01-13.15:14:17::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:17::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:17::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:17::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:14:17::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:17::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:14:17::SCWPlatform::Trying to set the existing hwdb with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:17::SCWPlatform::Opened existing hwdb module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:17::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-01-13.15:14:17::SCWMssOS::Checking the sw design at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:14:17::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2022-01-13.15:14:17::SCWMssOS::No sw design opened at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:14:17::SCWMssOS::mss does not exists at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:14:17::SCWMssOS::Creating sw design at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:14:17::SCWMssOS::Adding the swdes entry, created swdb /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:14:17::SCWMssOS::updating the scw layer changes to swdes at   /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:14:17::SCWMssOS::Writing mss at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:14:17::SCWMssOS::Completed writing the mss file at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp
+TRACE::2022-01-13.15:14:17::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2022-01-13.15:14:17::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2022-01-13.15:14:17::SCWBDomain::Completed writing the mss file at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp
+TRACE::2022-01-13.15:14:41::SCWPlatform::Generating sources Done.
+TRACE::2022-01-13.15:14:41::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:41::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:41::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:41::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:14:41::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:41::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:14:41::SCWPlatform::Trying to set the existing hwdb with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:41::SCWPlatform::Opened existing hwdb module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-01-13.15:14:41::SCWMssOS::Checking the sw design at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:14:41::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2022-01-13.15:14:41::SCWMssOS::No sw design opened at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:14:41::SCWMssOS::mss exists loading the mss file  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:14:41::SCWMssOS::Opened the sw design from mss  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:14:41::SCWMssOS::Adding the swdes entry /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2022-01-13.15:14:41::SCWMssOS::updating the scw layer about changes
+TRACE::2022-01-13.15:14:41::SCWMssOS::Opened the sw design.  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:14:41::SCWMssOS::Saving the mss changes /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:14:41::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2022-01-13.15:14:41::SCWMssOS::Completed writemss as part of save.
+TRACE::2022-01-13.15:14:41::SCWMssOS::Commit changes completed.
+TRACE::2022-01-13.15:14:41::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:41::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:41::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:41::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:14:41::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:41::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:14:41::SCWPlatform::Trying to set the existing hwdb with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:41::SCWPlatform::Opened existing hwdb module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-01-13.15:14:41::SCWMssOS::Checking the sw design at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:14:41::SCWMssOS::DEBUG:  swdes dump  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-01-13.15:14:41::SCWMssOS::Sw design exists and opened at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:14:41::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:41::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:41::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:41::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:14:41::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:41::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:14:41::SCWPlatform::Trying to set the existing hwdb with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:41::SCWPlatform::Opened existing hwdb module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-01-13.15:14:41::SCWMssOS::Checking the sw design at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:14:41::SCWMssOS::DEBUG:  swdes dump  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-01-13.15:14:41::SCWMssOS::Sw design exists and opened at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:14:41::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:41::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:41::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:41::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:14:41::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:41::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:14:41::SCWPlatform::Trying to set the existing hwdb with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:41::SCWPlatform::Opened existing hwdb module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-01-13.15:14:41::SCWMssOS::Checking the sw design at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:14:41::SCWMssOS::DEBUG:  swdes dump  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-01-13.15:14:41::SCWMssOS::Sw design exists and opened at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:14:41::SCWWriter::formatted JSON is {
+	"platformName":	"module2_hw_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"module2_hw_wrapper",
+	"platHandOff":	"/thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2/module2_hw_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/module2_hw_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"module2_hw_wrapper",
+	"systems":	[{
+			"systemName":	"module2_hw_wrapper",
+			"systemDesc":	"module2_hw_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"module2_hw_wrapper",
+			"sysActiveDom":	"zynq_fsbl",
+			"sysDefaultDom":	"",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.6",
+					"mssFile":	"",
+					"md5Digest":	"7bc78bf8d18a534270567ec4199eca04",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.6", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2022-01-13.15:14:41::SCWMssOS::Saving the mss changes /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:14:41::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2022-01-13.15:14:41::SCWMssOS::Completed writemss as part of save.
+TRACE::2022-01-13.15:14:41::SCWMssOS::Commit changes completed.
+TRACE::2022-01-13.15:14:41::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:41::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:41::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:41::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:14:41::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:41::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:14:41::SCWPlatform::Trying to set the existing hwdb with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:41::SCWPlatform::Opened existing hwdb module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-01-13.15:14:41::SCWMssOS::Checking the sw design at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:14:41::SCWMssOS::DEBUG:  swdes dump  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-01-13.15:14:41::SCWMssOS::Sw design exists and opened at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:14:41::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:41::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:41::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:41::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:14:41::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:41::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:14:41::SCWPlatform::Trying to set the existing hwdb with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:41::SCWPlatform::Opened existing hwdb module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-01-13.15:14:41::SCWMssOS::Checking the sw design at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:14:41::SCWMssOS::DEBUG:  swdes dump  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-01-13.15:14:41::SCWMssOS::Sw design exists and opened at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:14:41::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:41::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:41::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:41::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:14:41::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:41::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:14:41::SCWPlatform::Trying to set the existing hwdb with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:41::SCWPlatform::Opened existing hwdb module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-01-13.15:14:41::SCWMssOS::Checking the sw design at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:14:41::SCWMssOS::DEBUG:  swdes dump  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-01-13.15:14:41::SCWMssOS::Sw design exists and opened at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:14:41::SCWWriter::formatted JSON is {
+	"platformName":	"module2_hw_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"module2_hw_wrapper",
+	"platHandOff":	"/thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2/module2_hw_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/module2_hw_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"module2_hw_wrapper",
+	"systems":	[{
+			"systemName":	"module2_hw_wrapper",
+			"systemDesc":	"module2_hw_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"module2_hw_wrapper",
+			"sysActiveDom":	"zynq_fsbl",
+			"sysDefaultDom":	"",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.6",
+					"mssFile":	"",
+					"md5Digest":	"7bc78bf8d18a534270567ec4199eca04",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.6", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2022-01-13.15:14:42::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:42::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:42::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:42::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:14:42::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:42::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:14:42::SCWPlatform::Trying to set the existing hwdb with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:42::SCWPlatform::Opened existing hwdb module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-01-13.15:14:42::SCWDomain::checking for install qemu data   : 
+TRACE::2022-01-13.15:14:42::SCWDomain:: Using the QEMU Data from install at  : /thayerfs/apps/xilinx/Vitis/current/data/emulation/platforms/zynq/sw/a9_standalone/qemu/
+TRACE::2022-01-13.15:14:42::SCWDomain:: Using the QEMU args  from install at  : /thayerfs/apps/xilinx/Vitis/current/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+TRACE::2022-01-13.15:14:42::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:42::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:42::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:42::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:14:42::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:42::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:14:42::SCWPlatform::Trying to set the existing hwdb with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:42::SCWPlatform::Opened existing hwdb module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-01-13.15:14:42::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:42::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:42::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:42::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:14:42::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:42::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:14:42::SCWPlatform::Trying to set the existing hwdb with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:42::SCWPlatform::Opened existing hwdb module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-01-13.15:14:42::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:42::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:42::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:42::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:14:42::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:42::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:14:42::SCWPlatform::Trying to set the existing hwdb with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:42::SCWPlatform::Opened existing hwdb module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-01-13.15:14:42::SCWMssOS::Checking the sw design at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:14:42::SCWMssOS::DEBUG:  swdes dump  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-01-13.15:14:42::SCWMssOS::No sw design opened at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:14:42::SCWMssOS::mss does not exists at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:14:42::SCWMssOS::Creating sw design at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:14:42::SCWMssOS::Adding the swdes entry, created swdb /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss with des name /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:14:42::SCWMssOS::updating the scw layer changes to swdes at   /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:14:42::SCWMssOS::Writing mss at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:14:42::SCWMssOS::Completed writing the mss file at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp
+TRACE::2022-01-13.15:14:42::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2022-01-13.15:14:42::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2022-01-13.15:14:42::SCWMssOS::Completed writing the mss file at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp
+TRACE::2022-01-13.15:14:42::SCWMssOS::Forcing BSP Sources regeneration.
+TRACE::2022-01-13.15:14:57::SCWMssOS::Saving the mss changes /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:14:57::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2022-01-13.15:14:57::SCWMssOS::Completed writemss as part of save.
+TRACE::2022-01-13.15:14:57::SCWMssOS::Commit changes completed.
+TRACE::2022-01-13.15:14:57::SCWMssOS::Saving the mss changes /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:14:57::SCWMssOS::Adding the swdes entry, mss present, able to open swdb /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss with des name system_0
+TRACE::2022-01-13.15:14:57::SCWMssOS::Writing the mss file completed /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:14:57::SCWMssOS::Commit changes completed.
+TRACE::2022-01-13.15:14:57::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:57::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:57::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:57::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:14:57::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:57::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:14:57::SCWPlatform::Trying to set the existing hwdb with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:57::SCWPlatform::Opened existing hwdb module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:57::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-01-13.15:14:57::SCWMssOS::Checking the sw design at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:14:57::SCWMssOS::DEBUG:  swdes dump  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-01-13.15:14:57::SCWMssOS::Sw design exists and opened at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:14:57::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:57::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:57::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:57::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:14:57::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:57::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:14:57::SCWPlatform::Trying to set the existing hwdb with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:57::SCWPlatform::Opened existing hwdb module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:57::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-01-13.15:14:57::SCWMssOS::Checking the sw design at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:14:57::SCWMssOS::DEBUG:  swdes dump  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-01-13.15:14:57::SCWMssOS::Sw design exists and opened at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:14:57::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:57::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:57::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:57::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:14:57::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:57::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:14:57::SCWPlatform::Trying to set the existing hwdb with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:57::SCWPlatform::Opened existing hwdb module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:57::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-01-13.15:14:57::SCWMssOS::Checking the sw design at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:14:57::SCWMssOS::DEBUG:  swdes dump  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-01-13.15:14:57::SCWMssOS::Sw design exists and opened at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:14:57::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:57::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:57::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:57::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:14:57::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:57::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:14:57::SCWPlatform::Trying to set the existing hwdb with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:57::SCWPlatform::Opened existing hwdb module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:57::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-01-13.15:14:57::SCWMssOS::Checking the sw design at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:14:57::SCWMssOS::DEBUG:  swdes dump  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-01-13.15:14:57::SCWMssOS::Sw design exists and opened at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:14:57::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:57::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:57::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:57::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:14:57::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:57::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:14:57::SCWPlatform::Trying to set the existing hwdb with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:57::SCWPlatform::Opened existing hwdb module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:57::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-01-13.15:14:57::SCWMssOS::Checking the sw design at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:14:57::SCWMssOS::DEBUG:  swdes dump  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-01-13.15:14:57::SCWMssOS::Sw design exists and opened at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:14:57::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:57::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:57::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:57::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:14:57::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:57::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:14:57::SCWPlatform::Trying to set the existing hwdb with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:57::SCWPlatform::Opened existing hwdb module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:57::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-01-13.15:14:57::SCWMssOS::Checking the sw design at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:14:57::SCWMssOS::DEBUG:  swdes dump  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-01-13.15:14:57::SCWMssOS::Sw design exists and opened at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:14:57::SCWWriter::formatted JSON is {
+	"platformName":	"module2_hw_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"module2_hw_wrapper",
+	"platHandOff":	"/thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2/module2_hw_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/module2_hw_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"module2_hw_wrapper",
+	"systems":	[{
+			"systemName":	"module2_hw_wrapper",
+			"systemDesc":	"module2_hw_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"module2_hw_wrapper",
+			"sysActiveDom":	"standalone_ps7_cortexa9_0",
+			"sysDefaultDom":	"standalone_ps7_cortexa9_0",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.6",
+					"mssFile":	"",
+					"md5Digest":	"7bc78bf8d18a534270567ec4199eca04",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.6", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_ps7_cortexa9_0",
+					"domainDispName":	"standalone_ps7_cortexa9_0",
+					"domainDesc":	"standalone_ps7_cortexa9_0",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"/thayerfs/apps/xilinx/Vitis/current/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt",
+					"qemuData":	"/thayerfs/apps/xilinx/Vitis/current/data/emulation/platforms/zynq/sw/a9_standalone/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.6",
+					"mssFile":	"",
+					"md5Digest":	"90b8b5d80d7f964e418b7d8d68d0b7d5",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2022-01-13.15:14:57::SCWPlatform::Started generating the artifacts platform module2_hw_wrapper
+TRACE::2022-01-13.15:14:57::SCWPlatform::Sanity checking of platform is completed
+LOG::2022-01-13.15:14:57::SCWPlatform::Started generating the artifacts for system configuration module2_hw_wrapper
+LOG::2022-01-13.15:14:57::SCWSystem::Checking the domain zynq_fsbl
+LOG::2022-01-13.15:14:57::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2022-01-13.15:14:57::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2022-01-13.15:14:57::SCWDomain::Skipping the build for domain :  zynq_fsbl
+LOG::2022-01-13.15:14:57::SCWSystem::Checking the domain standalone_ps7_cortexa9_0
+LOG::2022-01-13.15:14:57::SCWSystem::Not a boot domain 
+LOG::2022-01-13.15:14:58::SCWSystem::Started Processing the domain standalone_ps7_cortexa9_0
+TRACE::2022-01-13.15:14:58::SCWDomain::Generating domain artifcats
+TRACE::2022-01-13.15:14:58::SCWMssOS::Generating standalone artifcats
+TRACE::2022-01-13.15:14:58::SCWMssOS::Copying the qemu file from  /thayerfs/apps/xilinx/Vitis/current/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt To /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/export/module2_hw_wrapper/sw/module2_hw_wrapper/qemu/
+TRACE::2022-01-13.15:14:58::SCWMssOS::Copying the qemu file from  /thayerfs/apps/xilinx/Vitis/current/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt To /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/export/module2_hw_wrapper/sw/module2_hw_wrapper/standalone_ps7_cortexa9_0/qemu/
+TRACE::2022-01-13.15:14:58::SCWMssOS:: Copying the user libraries. 
+TRACE::2022-01-13.15:14:58::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:58::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:58::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:58::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:14:58::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:58::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:14:58::SCWPlatform::Trying to set the existing hwdb with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:58::SCWPlatform::Opened existing hwdb module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-01-13.15:14:58::SCWMssOS::Checking the sw design at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:14:58::SCWMssOS::DEBUG:  swdes dump  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-01-13.15:14:58::SCWMssOS::Sw design exists and opened at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:14:58::SCWMssOS::Completed writing the mss file at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp
+TRACE::2022-01-13.15:14:58::SCWMssOS::Mss edits present, copying mssfile into export location /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:14:58::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2022-01-13.15:14:58::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2022-01-13.15:14:58::SCWDomain::Skipping the build for domain :  standalone_ps7_cortexa9_0
+TRACE::2022-01-13.15:14:58::SCWMssOS::skipping the bsp build ... 
+TRACE::2022-01-13.15:14:58::SCWMssOS::Copying to export directory.
+TRACE::2022-01-13.15:14:58::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2022-01-13.15:14:58::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+TRACE::2022-01-13.15:14:58::SCWMssOS:: Completed Standalone Artifacts creation 
+LOG::2022-01-13.15:14:58::SCWSystem::Completed Processing the domain standalone_ps7_cortexa9_0
+LOG::2022-01-13.15:14:58::SCWSystem::Completed Processing the sysconfig module2_hw_wrapper
+LOG::2022-01-13.15:14:58::SCWPlatform::Completed generating the artifacts for system configuration module2_hw_wrapper
+TRACE::2022-01-13.15:14:58::SCWPlatform::Started preparing the platform 
+TRACE::2022-01-13.15:14:58::SCWSystem::Writing the bif file for system config module2_hw_wrapper
+TRACE::2022-01-13.15:14:58::SCWSystem::dir created 
+TRACE::2022-01-13.15:14:58::SCWSystem::Writing the bif 
+TRACE::2022-01-13.15:14:58::SCWPlatform::Started writing the spfm file 
+TRACE::2022-01-13.15:14:58::SCWPlatform::Started writing the xpfm file 
+TRACE::2022-01-13.15:14:58::SCWPlatform::Completed generating the platform
+TRACE::2022-01-13.15:14:58::SCWMssOS::Saving the mss changes /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:14:58::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2022-01-13.15:14:58::SCWMssOS::Completed writemss as part of save.
+TRACE::2022-01-13.15:14:58::SCWMssOS::Commit changes completed.
+TRACE::2022-01-13.15:14:58::SCWMssOS::Saving the mss changes /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:14:58::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2022-01-13.15:14:58::SCWMssOS::Completed writemss as part of save.
+TRACE::2022-01-13.15:14:58::SCWMssOS::Commit changes completed.
+TRACE::2022-01-13.15:14:58::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:58::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:58::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:58::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:14:58::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:58::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:14:58::SCWPlatform::Trying to set the existing hwdb with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:58::SCWPlatform::Opened existing hwdb module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-01-13.15:14:58::SCWMssOS::Checking the sw design at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:14:58::SCWMssOS::DEBUG:  swdes dump  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-01-13.15:14:58::SCWMssOS::Sw design exists and opened at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:14:58::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:58::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:58::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:58::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:14:58::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:58::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:14:58::SCWPlatform::Trying to set the existing hwdb with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:58::SCWPlatform::Opened existing hwdb module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-01-13.15:14:58::SCWMssOS::Checking the sw design at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:14:58::SCWMssOS::DEBUG:  swdes dump  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-01-13.15:14:58::SCWMssOS::Sw design exists and opened at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:14:58::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:58::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:58::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:58::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:14:58::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:58::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:14:58::SCWPlatform::Trying to set the existing hwdb with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:58::SCWPlatform::Opened existing hwdb module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-01-13.15:14:58::SCWMssOS::Checking the sw design at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:14:58::SCWMssOS::DEBUG:  swdes dump  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-01-13.15:14:58::SCWMssOS::Sw design exists and opened at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:14:58::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:58::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:58::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:58::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:14:58::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:58::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:14:58::SCWPlatform::Trying to set the existing hwdb with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:58::SCWPlatform::Opened existing hwdb module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-01-13.15:14:58::SCWMssOS::Checking the sw design at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:14:58::SCWMssOS::DEBUG:  swdes dump  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-01-13.15:14:58::SCWMssOS::Sw design exists and opened at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:14:58::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:58::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:58::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:58::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:14:58::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:58::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:14:58::SCWPlatform::Trying to set the existing hwdb with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:58::SCWPlatform::Opened existing hwdb module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-01-13.15:14:59::SCWMssOS::Checking the sw design at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:14:59::SCWMssOS::DEBUG:  swdes dump  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-01-13.15:14:59::SCWMssOS::Sw design exists and opened at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:14:59::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:59::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:59::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:59::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:14:59::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:59::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:14:59::SCWPlatform::Trying to set the existing hwdb with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:59::SCWPlatform::Opened existing hwdb module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-01-13.15:14:59::SCWMssOS::Checking the sw design at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:14:59::SCWMssOS::DEBUG:  swdes dump  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-01-13.15:14:59::SCWMssOS::Sw design exists and opened at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:14:59::SCWWriter::formatted JSON is {
+	"platformName":	"module2_hw_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"module2_hw_wrapper",
+	"platHandOff":	"/thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2/module2_hw_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/module2_hw_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"module2_hw_wrapper",
+	"systems":	[{
+			"systemName":	"module2_hw_wrapper",
+			"systemDesc":	"module2_hw_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"module2_hw_wrapper",
+			"sysActiveDom":	"standalone_ps7_cortexa9_0",
+			"sysDefaultDom":	"standalone_ps7_cortexa9_0",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.6",
+					"mssFile":	"",
+					"md5Digest":	"7bc78bf8d18a534270567ec4199eca04",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.6", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_ps7_cortexa9_0",
+					"domainDispName":	"standalone_ps7_cortexa9_0",
+					"domainDesc":	"standalone_ps7_cortexa9_0",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"/thayerfs/apps/xilinx/Vitis/current/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt",
+					"qemuData":	"/thayerfs/apps/xilinx/Vitis/current/data/emulation/platforms/zynq/sw/a9_standalone/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.6",
+					"mssFile":	"",
+					"md5Digest":	"90b8b5d80d7f964e418b7d8d68d0b7d5",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2022-01-13.15:14:59::SCWPlatform::updated the xpfm file.
+TRACE::2022-01-13.15:14:59::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:59::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:59::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:59::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:14:59::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:59::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:14:59::SCWPlatform::Trying to set the existing hwdb with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:59::SCWPlatform::Opened existing hwdb module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-01-13.15:14:59::SCWMssOS::Checking the sw design at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:14:59::SCWMssOS::DEBUG:  swdes dump  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-01-13.15:14:59::SCWMssOS::Sw design exists and opened at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:14:59::SCWMssOS::Saving the mss changes /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:14:59::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2022-01-13.15:14:59::SCWMssOS::Completed writemss as part of save.
+TRACE::2022-01-13.15:14:59::SCWMssOS::Commit changes completed.
+TRACE::2022-01-13.15:14:59::SCWMssOS::Saving the mss changes /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:14:59::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2022-01-13.15:14:59::SCWMssOS::Completed writemss as part of save.
+TRACE::2022-01-13.15:14:59::SCWMssOS::Commit changes completed.
+TRACE::2022-01-13.15:14:59::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:59::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:59::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:59::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:14:59::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:59::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:14:59::SCWPlatform::Trying to set the existing hwdb with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:59::SCWPlatform::Opened existing hwdb module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-01-13.15:14:59::SCWMssOS::Checking the sw design at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:14:59::SCWMssOS::DEBUG:  swdes dump  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-01-13.15:14:59::SCWMssOS::Sw design exists and opened at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:14:59::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:59::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:59::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:59::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:14:59::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:59::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:14:59::SCWPlatform::Trying to set the existing hwdb with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:59::SCWPlatform::Opened existing hwdb module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-01-13.15:14:59::SCWMssOS::Checking the sw design at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:14:59::SCWMssOS::DEBUG:  swdes dump  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-01-13.15:14:59::SCWMssOS::Sw design exists and opened at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:14:59::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:59::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:59::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:59::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:14:59::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:59::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:14:59::SCWPlatform::Trying to set the existing hwdb with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:59::SCWPlatform::Opened existing hwdb module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-01-13.15:14:59::SCWMssOS::Checking the sw design at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:14:59::SCWMssOS::DEBUG:  swdes dump  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-01-13.15:14:59::SCWMssOS::Sw design exists and opened at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:14:59::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:59::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:59::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:59::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:14:59::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:59::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:14:59::SCWPlatform::Trying to set the existing hwdb with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:59::SCWPlatform::Opened existing hwdb module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-01-13.15:14:59::SCWMssOS::Checking the sw design at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:14:59::SCWMssOS::DEBUG:  swdes dump  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-01-13.15:14:59::SCWMssOS::Sw design exists and opened at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:14:59::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:59::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:59::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:59::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:14:59::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:59::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:14:59::SCWPlatform::Trying to set the existing hwdb with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:59::SCWPlatform::Opened existing hwdb module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-01-13.15:14:59::SCWMssOS::Checking the sw design at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:14:59::SCWMssOS::DEBUG:  swdes dump  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-01-13.15:14:59::SCWMssOS::Sw design exists and opened at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:14:59::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:59::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:59::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:59::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:14:59::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:14:59::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:14:59::SCWPlatform::Trying to set the existing hwdb with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:14:59::SCWPlatform::Opened existing hwdb module2_hw_wrapper_0
+TRACE::2022-01-13.15:15:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-01-13.15:15:00::SCWMssOS::Checking the sw design at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:15:00::SCWMssOS::DEBUG:  swdes dump  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-01-13.15:15:00::SCWMssOS::Sw design exists and opened at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:15:00::SCWWriter::formatted JSON is {
+	"platformName":	"module2_hw_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"module2_hw_wrapper",
+	"platHandOff":	"/thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2/module2_hw_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/module2_hw_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"module2_hw_wrapper",
+	"systems":	[{
+			"systemName":	"module2_hw_wrapper",
+			"systemDesc":	"module2_hw_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"module2_hw_wrapper",
+			"sysActiveDom":	"standalone_ps7_cortexa9_0",
+			"sysDefaultDom":	"standalone_ps7_cortexa9_0",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.6",
+					"mssFile":	"",
+					"md5Digest":	"7bc78bf8d18a534270567ec4199eca04",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.6", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_ps7_cortexa9_0",
+					"domainDispName":	"standalone_ps7_cortexa9_0",
+					"domainDesc":	"standalone_ps7_cortexa9_0",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"/thayerfs/apps/xilinx/Vitis/current/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt",
+					"qemuData":	"/thayerfs/apps/xilinx/Vitis/current/data/emulation/platforms/zynq/sw/a9_standalone/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.6",
+					"mssFile":	"",
+					"md5Digest":	"90b8b5d80d7f964e418b7d8d68d0b7d5",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2022-01-13.15:15:00::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:00::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:00::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:00::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:15:00::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:00::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:15:00::SCWPlatform::Trying to set the existing hwdb with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:15:00::SCWPlatform::Opened existing hwdb module2_hw_wrapper_0
+TRACE::2022-01-13.15:15:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-01-13.15:15:00::SCWMssOS::Checking the sw design at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:15:00::SCWMssOS::DEBUG:  swdes dump  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-01-13.15:15:00::SCWMssOS::Sw design exists and opened at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:15:00::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:00::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:00::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:00::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:15:00::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:00::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:15:00::SCWPlatform::Trying to set the existing hwdb with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:15:00::SCWPlatform::Opened existing hwdb module2_hw_wrapper_0
+TRACE::2022-01-13.15:15:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-01-13.15:15:00::SCWMssOS::Checking the sw design at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:15:00::SCWMssOS::DEBUG:  swdes dump  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-01-13.15:15:00::SCWMssOS::Sw design exists and opened at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:15:00::SCWMssOS::Saving the mss changes /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:15:00::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2022-01-13.15:15:00::SCWMssOS::Completed writemss as part of save.
+TRACE::2022-01-13.15:15:00::SCWMssOS::Commit changes completed.
+TRACE::2022-01-13.15:15:00::SCWMssOS::Saving the mss changes /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:15:00::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2022-01-13.15:15:00::SCWMssOS::Completed writemss as part of save.
+TRACE::2022-01-13.15:15:00::SCWMssOS::Commit changes completed.
+TRACE::2022-01-13.15:15:00::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:00::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:00::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:00::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:15:00::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:00::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:15:00::SCWPlatform::Trying to set the existing hwdb with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:15:00::SCWPlatform::Opened existing hwdb module2_hw_wrapper_0
+TRACE::2022-01-13.15:15:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-01-13.15:15:00::SCWMssOS::Checking the sw design at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:15:00::SCWMssOS::DEBUG:  swdes dump  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-01-13.15:15:00::SCWMssOS::Sw design exists and opened at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:15:00::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:00::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:00::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:00::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:15:00::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:00::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:15:00::SCWPlatform::Trying to set the existing hwdb with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:15:00::SCWPlatform::Opened existing hwdb module2_hw_wrapper_0
+TRACE::2022-01-13.15:15:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-01-13.15:15:00::SCWMssOS::Checking the sw design at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:15:00::SCWMssOS::DEBUG:  swdes dump  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-01-13.15:15:00::SCWMssOS::Sw design exists and opened at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:15:00::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:00::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:00::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:00::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:15:00::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:00::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:15:00::SCWPlatform::Trying to set the existing hwdb with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:15:00::SCWPlatform::Opened existing hwdb module2_hw_wrapper_0
+TRACE::2022-01-13.15:15:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-01-13.15:15:00::SCWMssOS::Checking the sw design at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:15:00::SCWMssOS::DEBUG:  swdes dump  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-01-13.15:15:00::SCWMssOS::Sw design exists and opened at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:15:00::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:00::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:00::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:00::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:15:00::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:00::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:15:00::SCWPlatform::Trying to set the existing hwdb with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:15:00::SCWPlatform::Opened existing hwdb module2_hw_wrapper_0
+TRACE::2022-01-13.15:15:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-01-13.15:15:00::SCWMssOS::Checking the sw design at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:15:00::SCWMssOS::DEBUG:  swdes dump  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-01-13.15:15:00::SCWMssOS::Sw design exists and opened at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:15:00::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:00::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:00::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:00::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:15:00::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:00::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:15:00::SCWPlatform::Trying to set the existing hwdb with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:15:00::SCWPlatform::Opened existing hwdb module2_hw_wrapper_0
+TRACE::2022-01-13.15:15:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-01-13.15:15:00::SCWMssOS::Checking the sw design at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:15:00::SCWMssOS::DEBUG:  swdes dump  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-01-13.15:15:00::SCWMssOS::Sw design exists and opened at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:15:00::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:00::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:00::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:00::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:15:00::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:00::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:15:00::SCWPlatform::Trying to set the existing hwdb with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:15:00::SCWPlatform::Opened existing hwdb module2_hw_wrapper_0
+TRACE::2022-01-13.15:15:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-01-13.15:15:00::SCWMssOS::Checking the sw design at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:15:00::SCWMssOS::DEBUG:  swdes dump  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-01-13.15:15:00::SCWMssOS::Sw design exists and opened at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:15:00::SCWWriter::formatted JSON is {
+	"platformName":	"module2_hw_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"module2_hw_wrapper",
+	"platHandOff":	"/thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2/module2_hw_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/module2_hw_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"module2_hw_wrapper",
+	"systems":	[{
+			"systemName":	"module2_hw_wrapper",
+			"systemDesc":	"module2_hw_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"module2_hw_wrapper",
+			"sysActiveDom":	"standalone_ps7_cortexa9_0",
+			"sysDefaultDom":	"standalone_ps7_cortexa9_0",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.6",
+					"mssFile":	"",
+					"md5Digest":	"7bc78bf8d18a534270567ec4199eca04",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.6", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_ps7_cortexa9_0",
+					"domainDispName":	"standalone_ps7_cortexa9_0",
+					"domainDesc":	"standalone_ps7_cortexa9_0",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"/thayerfs/apps/xilinx/Vitis/current/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt",
+					"qemuData":	"/thayerfs/apps/xilinx/Vitis/current/data/emulation/platforms/zynq/sw/a9_standalone/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.6",
+					"mssFile":	"",
+					"md5Digest":	"90b8b5d80d7f964e418b7d8d68d0b7d5",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2022-01-13.15:15:01::SCWPlatform::Started generating the artifacts platform module2_hw_wrapper
+TRACE::2022-01-13.15:15:01::SCWPlatform::Sanity checking of platform is completed
+LOG::2022-01-13.15:15:01::SCWPlatform::Started generating the artifacts for system configuration module2_hw_wrapper
+LOG::2022-01-13.15:15:01::SCWSystem::Started Processing the domain standalone_ps7_cortexa9_0
+TRACE::2022-01-13.15:15:01::SCWDomain::Generating domain artifcats
+TRACE::2022-01-13.15:15:01::SCWMssOS::Generating standalone artifcats
+TRACE::2022-01-13.15:15:01::SCWMssOS::Copying the qemu file from  /thayerfs/apps/xilinx/Vitis/current/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt To /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/export/module2_hw_wrapper/sw/module2_hw_wrapper/qemu/
+TRACE::2022-01-13.15:15:01::SCWMssOS::Copying the qemu file from  /thayerfs/apps/xilinx/Vitis/current/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt To /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/export/module2_hw_wrapper/sw/module2_hw_wrapper/standalone_ps7_cortexa9_0/qemu/
+TRACE::2022-01-13.15:15:01::SCWMssOS:: Copying the user libraries. 
+TRACE::2022-01-13.15:15:01::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:01::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:01::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:01::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:15:01::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:01::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:15:01::SCWPlatform::Trying to set the existing hwdb with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:15:01::SCWPlatform::Opened existing hwdb module2_hw_wrapper_0
+TRACE::2022-01-13.15:15:01::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-01-13.15:15:01::SCWMssOS::Checking the sw design at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:15:01::SCWMssOS::DEBUG:  swdes dump  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-01-13.15:15:01::SCWMssOS::Sw design exists and opened at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:15:01::SCWMssOS::Completed writing the mss file at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp
+TRACE::2022-01-13.15:15:01::SCWMssOS::Mss edits present, copying mssfile into export location /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:15:01::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2022-01-13.15:15:01::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2022-01-13.15:15:01::SCWDomain::Building the domain as part of full build :  standalone_ps7_cortexa9_0
+TRACE::2022-01-13.15:15:01::SCWMssOS::skipping the bsp build ... 
+TRACE::2022-01-13.15:15:01::SCWMssOS::Copying to export directory.
+TRACE::2022-01-13.15:15:01::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2022-01-13.15:15:01::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+TRACE::2022-01-13.15:15:01::SCWMssOS:: Completed Standalone Artifacts creation 
+LOG::2022-01-13.15:15:01::SCWSystem::Completed Processing the domain standalone_ps7_cortexa9_0
+LOG::2022-01-13.15:15:01::SCWSystem::Completed Processing the sysconfig module2_hw_wrapper
+LOG::2022-01-13.15:15:01::SCWPlatform::Completed generating the artifacts for system configuration module2_hw_wrapper
+TRACE::2022-01-13.15:15:01::SCWPlatform::Started preparing the platform 
+TRACE::2022-01-13.15:15:01::SCWSystem::Writing the bif file for system config module2_hw_wrapper
+TRACE::2022-01-13.15:15:01::SCWSystem::dir created 
+TRACE::2022-01-13.15:15:01::SCWSystem::Writing the bif 
+TRACE::2022-01-13.15:15:01::SCWPlatform::Started writing the spfm file 
+TRACE::2022-01-13.15:15:01::SCWPlatform::Started writing the xpfm file 
+TRACE::2022-01-13.15:15:01::SCWPlatform::Completed generating the platform
+TRACE::2022-01-13.15:15:01::SCWMssOS::Saving the mss changes /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:15:01::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2022-01-13.15:15:01::SCWMssOS::Completed writemss as part of save.
+TRACE::2022-01-13.15:15:01::SCWMssOS::Commit changes completed.
+TRACE::2022-01-13.15:15:01::SCWMssOS::Saving the mss changes /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:15:01::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2022-01-13.15:15:01::SCWMssOS::Completed writemss as part of save.
+TRACE::2022-01-13.15:15:01::SCWMssOS::Commit changes completed.
+TRACE::2022-01-13.15:15:01::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:01::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:01::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:01::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:15:01::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:01::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:15:01::SCWPlatform::Trying to set the existing hwdb with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:15:01::SCWPlatform::Opened existing hwdb module2_hw_wrapper_0
+TRACE::2022-01-13.15:15:01::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-01-13.15:15:01::SCWMssOS::Checking the sw design at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:15:01::SCWMssOS::DEBUG:  swdes dump  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-01-13.15:15:01::SCWMssOS::Sw design exists and opened at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:15:01::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:01::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:01::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:01::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:15:01::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:01::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:15:01::SCWPlatform::Trying to set the existing hwdb with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:15:01::SCWPlatform::Opened existing hwdb module2_hw_wrapper_0
+TRACE::2022-01-13.15:15:01::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-01-13.15:15:01::SCWMssOS::Checking the sw design at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:15:01::SCWMssOS::DEBUG:  swdes dump  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-01-13.15:15:01::SCWMssOS::Sw design exists and opened at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:15:01::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:01::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:01::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:01::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:15:02::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:02::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:15:02::SCWPlatform::Trying to set the existing hwdb with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:15:02::SCWPlatform::Opened existing hwdb module2_hw_wrapper_0
+TRACE::2022-01-13.15:15:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-01-13.15:15:02::SCWMssOS::Checking the sw design at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:15:02::SCWMssOS::DEBUG:  swdes dump  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-01-13.15:15:02::SCWMssOS::Sw design exists and opened at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-01-13.15:15:02::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:02::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:02::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:02::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:15:02::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:02::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:15:02::SCWPlatform::Trying to set the existing hwdb with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:15:02::SCWPlatform::Opened existing hwdb module2_hw_wrapper_0
+TRACE::2022-01-13.15:15:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-01-13.15:15:02::SCWMssOS::Checking the sw design at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:15:02::SCWMssOS::DEBUG:  swdes dump  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-01-13.15:15:02::SCWMssOS::Sw design exists and opened at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:15:02::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:02::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:02::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:02::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:15:02::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:02::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:15:02::SCWPlatform::Trying to set the existing hwdb with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:15:02::SCWPlatform::Opened existing hwdb module2_hw_wrapper_0
+TRACE::2022-01-13.15:15:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-01-13.15:15:02::SCWMssOS::Checking the sw design at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:15:02::SCWMssOS::DEBUG:  swdes dump  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-01-13.15:15:02::SCWMssOS::Sw design exists and opened at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:15:02::SCWPlatform::Trying to open the hw design at /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:02::SCWPlatform::DSA given /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:02::SCWPlatform::DSA absoulate path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:02::SCWPlatform::DSA directory /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw
+TRACE::2022-01-13.15:15:02::SCWPlatform:: Platform Path /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/hw/module2_hw_wrapper.xsa
+TRACE::2022-01-13.15:15:02::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2022-01-13.15:15:02::SCWPlatform::Trying to set the existing hwdb with name module2_hw_wrapper_0
+TRACE::2022-01-13.15:15:02::SCWPlatform::Opened existing hwdb module2_hw_wrapper_0
+TRACE::2022-01-13.15:15:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-01-13.15:15:02::SCWMssOS::Checking the sw design at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:15:02::SCWMssOS::DEBUG:  swdes dump  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-01-13.15:15:02::SCWMssOS::Sw design exists and opened at  /thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2022-01-13.15:15:02::SCWWriter::formatted JSON is {
+	"platformName":	"module2_hw_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"module2_hw_wrapper",
+	"platHandOff":	"/thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2/module2_hw_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/module2_hw_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"module2_hw_wrapper",
+	"systems":	[{
+			"systemName":	"module2_hw_wrapper",
+			"systemDesc":	"module2_hw_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"module2_hw_wrapper",
+			"sysActiveDom":	"standalone_ps7_cortexa9_0",
+			"sysDefaultDom":	"standalone_ps7_cortexa9_0",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.6",
+					"mssFile":	"",
+					"md5Digest":	"7bc78bf8d18a534270567ec4199eca04",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.6", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_ps7_cortexa9_0",
+					"domainDispName":	"standalone_ps7_cortexa9_0",
+					"domainDesc":	"standalone_ps7_cortexa9_0",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"/thayerfs/apps/xilinx/Vitis/current/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt",
+					"qemuData":	"/thayerfs/apps/xilinx/Vitis/current/data/emulation/platforms/zynq/sw/a9_standalone/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.6",
+					"mssFile":	"",
+					"md5Digest":	"90b8b5d80d7f964e418b7d8d68d0b7d5",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2022-01-13.15:15:02::SCWPlatform::updated the xpfm file.
