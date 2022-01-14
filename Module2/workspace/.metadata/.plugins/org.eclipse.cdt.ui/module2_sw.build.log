@@ -1,0 +1,25 @@
+14:27:53 **** Incremental Build of configuration Debug for project module2_sw ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+ 
+make --no-print-directory main-build
+Building file: ../src/step3-outline.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/step3-outline.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/export/module2_hw_wrapper/sw/module2_hw_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/step3-outline.d" -MT"src/step3-outline.o" -o "src/step3-outline.o" "../src/step3-outline.c"
+Finished building: ../src/step3-outline.c
+ 
+Building target: module2_sw.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L/thayerfs/home/f003j8y/ENGS62/Module2/workspace/module2_hw_wrapper/export/module2_hw_wrapper/sw/module2_hw_wrapper/standalone_ps7_cortexa9_0/bsplib/lib -o "module2_sw.elf"  ./src/gic.o ./src/led.o ./src/platform.o ./src/step3-outline.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: module2_sw.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size module2_sw.elf  |tee "module2_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40722	   3016	  22744	  66482	  103b2	module2_sw.elf
+Finished building: module2_sw.elf.size
+ 
+
+14:27:55 Build Finished (took 1s.893ms)
+
