@@ -1,0 +1,61 @@
+/*
+ * main.c -- A program to print a dot each time button 0 is pressed.
+ *
+ *  Some useful values:
+ *  -- XPAR_AXI_GPIO_1_DEVICE_ID -- xparameters.h
+ *  -- XPAR_FABRIC_GPIO_1_VEC_ID -- xparameters.h
+ *  -- XGPIO_IR_CH1_MASK         -- xgpio_l.h (included by xgpio.h)
+ */
+#include <stdio.h>		/* getchar,printf */
+#include <stdlib.h>		/* strtod */
+#include <stdbool.h>		/* type bool */
+#include <unistd.h>		/* sleep */
+#include <string.h>
+#include <stdbool.h>
+
+#include "platform.h"		/* ZYBO board interface */
+#include "xil_types.h"		/* u32, s32 etc */
+#include "xparameters.h"	/* constants used by hardware */
+
+#include "gic.h"		/* interrupt controller interface */
+#include "led.h"
+#include "xgpio.h"		/* axi gpio interface */
+#include "io.h"
+
+void btn_callback(u32 btn){
+	led_toggle(btn);
+}
+
+int main() {
+  init_platform();
+
+  io_btn_init(btn_callback);
+
+  /* initialize led's 0-3 */
+  led_init();
+
+  /* initialize the gic (c.f. gic.h) */
+  gic_init();
+
+  printf("[hello]\n"); /* so we know its alive */
+  pushes=0;
+  while(pushes<5){ /* do nothing and handle interrupts.
+   	   	   	   	  	  Since we connected to gic, the
+   	   	   	   	  	  gic will sense button pushes and then
+   	   	   	   	  	  create an interrupt, telling PS to do
+   	   	   	   	  	  button handler function			*/
+  }
+
+  printf("\n[done]\n");
+
+  /* disconnect the interrupts (c.f. gic.h) */
+  gic_disconnect(XPAR_FABRIC_GPIO_1_VEC_ID);
+
+  /* close the gic (c.f. gic.h) */
+  gic_close();
+
+  /* cleanup the hardware platform */
+  cleanup_platform();
+  return 0;
+}
+

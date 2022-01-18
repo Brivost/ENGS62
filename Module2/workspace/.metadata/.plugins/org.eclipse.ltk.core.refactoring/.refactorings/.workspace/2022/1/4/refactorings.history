@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;module2_sw/src/step3-outline.c&apos;" deleteContents="false" description="Delete resource &apos;module2_sw/src/step3-outline.c&apos;" element1="/module2_sw/src/step3-outline.c" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1642537398444"/>
+</session>

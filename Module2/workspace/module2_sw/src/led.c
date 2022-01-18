@@ -15,7 +15,7 @@ static u32 LEDs_status;
  * Initialize the led module
  */
 void led_init(void){
-	init_platform();						/* initialize the hardware platform */
+	//init_platform();						/* initialize the hardware platform */
 
 	XGpio_Initialize(&port, XPAR_AXI_GPIO_0_DEVICE_ID);	/* initialize device AXI_GPIO_0 */
 	XGpio_SetDataDirection(&port, CHANNEL1, OUTPUT);	    /* set tristate buffer to output */
@@ -33,15 +33,28 @@ void led_init(void){
  * Does nothing if <led> is invalid
  */
 void led_set(u32 led, bool tostate){
-	if (led == ALL || led >=0){
-		if (led == 7 && tostate == LED_ON){
-			XGpioPs_WritePin(&port4, LED4_pin, 1); // turn on led 4
+	if (led >=0){
+		if (led == 4){
+			if (tostate == LED_ON){
+				XGpioPs_WritePin(&port4, LED4_pin, 1); // turn on led 4
+			}
+			else if (tostate == LED_OFF){
+				XGpioPs_WritePin(&port4, LED4_pin, 0); // turn off led 4
+			}
 		}
-		else if (led == 7 && tostate == LED_OFF){
-			XGpioPs_WritePin(&port4, LED4_pin, 0); // turn off led 4
+		else if (led == ALL){
+			if (tostate == LED_ON) { //turn on leds 0-4
+				XGpio_DiscreteWrite(&port, CHANNEL1, 15);
+				XGpioPs_WritePin(&port4, LED4_pin, 1);
+			}
+			else if (tostate == LED_OFF){ //turn off leds 0-4
+				XGpio_DiscreteWrite(&port, CHANNEL1, 0);
+				XGpioPs_WritePin(&port4, LED4_pin, 0);
+			}
 		}
 		else{
-			LEDs_status = XGpio_DiscreteRead(&port, CHANNEL1);
+			led = 0x0001 << led; // change led's 0-3, converts int to hex
+			LEDs_status = XGpio_DiscreteRead(&port, CHANNEL1); //get current status of leds 0-3
 			if (tostate == LED_ON){
 				LEDs_status = LEDs_status | led; //switch specified LED to on status 0100 or 0001 -> 0101
 			}
@@ -61,7 +74,8 @@ void led_set(u32 led, bool tostate){
  * returns {LED_ON,LED_OFF,...}; LED_OFF if <led> is invalid
  */
 bool led_get(u32 led) {
-	if (led >= 0 && led < 9){ //get status of led's 0-3
+	if (led >= 0 && led <= 3){ //get status of led's 0-3
+		led = 0x0001 << led; // convert to hex
 		LEDs_status = XGpio_DiscreteRead(&port, CHANNEL1);
 		return (LEDs_status & led); //right shift LED_status 'led' times
 											//returns true if it's on,
