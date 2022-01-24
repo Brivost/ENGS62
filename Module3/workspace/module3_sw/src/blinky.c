@@ -18,13 +18,16 @@
 #include "xil_types.h"					/* u32, u16 etc */
 #include "platform.h"					/* ZYBOboard interface */
 #include "xparameters.h"				/* constants used by the hardware */
+//#include "xttcps.h" //should I be including this?
 
 #include "xgpio.h"
 #include "led.h"
 #include "gic.h"
 #include "io.h"
 
-XTTCPS_OPTION_INTERVAL_MODE
+static XTtcPs ttc;
+static XInterval interval;
+static u8 prescaler;
 
 void led_callback(u32 btn){
 	led_toggle(btn);
@@ -86,6 +89,17 @@ int main() {
 
 	/* initialize the gic (c.f. gic.h) */
 	gic_init();
+
+	/* initialize triple time counter */
+	XTtcPs_Config *config = XTtcPs_LookupConfig(XPAR_XTTCPS_0_DEVICE_ID); // looks up dev config based on device id
+	XTtcPs_CfgInitialize(&ttc, config, config->BaseAddress); // initializes XTtcPs instance
+
+	XTtcPs_CalcIntervalFromFreq(&ttc, 1, &interval, &prescaler);
+	XTtcPs_SetPrescaler(&ttc, prescaler);
+	XTtcPs_SetInterval(&ttc, interval);
+	XTtcPs_SetOptions(&ttc, XTTCPS_OPTION_INTERVAL_MODE);
+
+
 
 	/* initialize led's 0-3 */
 	led_init();

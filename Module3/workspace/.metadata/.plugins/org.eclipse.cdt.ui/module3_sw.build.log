@@ -1,4 +1,4 @@
-16:22:16 **** Incremental Build of configuration Debug for project module3_sw ****
+19:03:00 **** Build of configuration Debug for project module3_sw ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -7,39 +7,50 @@ make --no-print-directory main-build
 Building file: ../src/blinky.c
 Invoking: ARM v7 gcc compiler
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/blinky.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/thayerfs/home/f003j8y/ENGS62/Module3/workspace/module3_hw_wrapper/export/module3_hw_wrapper/sw/module3_hw_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/blinky.d" -MT"src/blinky.o" -o "src/blinky.o" "../src/blinky.c"
-Finished building: ../src/blinky.c
- 
-Building file: ../src/gic.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/thayerfs/home/f003j8y/ENGS62/Module3/workspace/module3_hw_wrapper/export/module3_hw_wrapper/sw/module3_hw_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/gic.d" -MT"src/gic.o" -o "src/gic.o" "../src/gic.c"
-Finished building: ../src/gic.c
- 
-Building file: ../src/io.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/io.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/thayerfs/home/f003j8y/ENGS62/Module3/workspace/module3_hw_wrapper/export/module3_hw_wrapper/sw/module3_hw_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/io.d" -MT"src/io.o" -o "src/io.o" "../src/io.c"
-Finished building: ../src/io.c
- 
-Building file: ../src/led.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/thayerfs/home/f003j8y/ENGS62/Module3/workspace/module3_hw_wrapper/export/module3_hw_wrapper/sw/module3_hw_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/led.d" -MT"src/led.o" -o "src/led.o" "../src/led.c"
-Finished building: ../src/led.c
- 
-Building file: ../src/platform.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/thayerfs/home/f003j8y/ENGS62/Module3/workspace/module3_hw_wrapper/export/module3_hw_wrapper/sw/module3_hw_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
-Finished building: ../src/platform.c
- 
-Building target: module3_sw.elf
-Invoking: ARM v7 gcc linker
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L/thayerfs/home/f003j8y/ENGS62/Module3/workspace/module3_hw_wrapper/export/module3_hw_wrapper/sw/module3_hw_wrapper/standalone_ps7_cortexa9_0/bsplib/lib -o "module3_sw.elf"  ./src/blinky.o ./src/gic.o ./src/io.o ./src/led.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: module3_sw.elf
- 
-Invoking: ARM v7 Print Size
-arm-none-eabi-size module3_sw.elf  |tee "module3_sw.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  63979	   3380	  22768	  90127	  1600f	module3_sw.elf
-Finished building: module3_sw.elf.size
- 
+../src/blinky.c:28:8: error: unknown type name 'XTtcPs'
+   28 | static XTtcPs ttc;
+      |        ^~~~~~
+../src/blinky.c:29:8: error: unknown type name 'XInterval'
+   29 | static XInterval interval;
+      |        ^~~~~~~~~
+../src/blinky.c: In function 'main':
+../src/blinky.c:94:2: error: unknown type name 'XTtcPs_Config'; did you mean 'XUartPs_Config'?
+   94 |  XTtcPs_Config *config = XTtcPs_LookupConfig(XPAR_XTTCPS_0_DEVICE_ID); // looks up dev config based on device id
+      |  ^~~~~~~~~~~~~
+      |  XUartPs_Config
+../src/blinky.c:94:26: warning: implicit declaration of function 'XTtcPs_LookupConfig'; did you mean 'XUartPs_LookupConfig'? [-Wimplicit-function-declaration]
+   94 |  XTtcPs_Config *config = XTtcPs_LookupConfig(XPAR_XTTCPS_0_DEVICE_ID); // looks up dev config based on device id
+      |                          ^~~~~~~~~~~~~~~~~~~
+      |                          XUartPs_LookupConfig
+../src/blinky.c:94:26: warning: initialization of 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+../src/blinky.c:95:2: warning: implicit declaration of function 'XTtcPs_CfgInitialize'; did you mean 'XUartPs_CfgInitialize'? [-Wimplicit-function-declaration]
+   95 |  XTtcPs_CfgInitialize(&ttc, config, config->BaseAddress); // initializes XTtcPs instance
+      |  ^~~~~~~~~~~~~~~~~~~~
+      |  XUartPs_CfgInitialize
+../src/blinky.c:95:43: error: request for member 'BaseAddress' in something not a structure or union
+   95 |  XTtcPs_CfgInitialize(&ttc, config, config->BaseAddress); // initializes XTtcPs instance
+      |                                           ^~
+../src/blinky.c:97:2: warning: implicit declaration of function 'XTtcPs_CalcIntervalFromFreq' [-Wimplicit-function-declaration]
+   97 |  XTtcPs_CalcIntervalFromFreq(&ttc, 1, &interval, &prescaler);
+      |  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/blinky.c:98:2: warning: implicit declaration of function 'XTtcPs_SetPrescaler' [-Wimplicit-function-declaration]
+   98 |  XTtcPs_SetPrescaler(&ttc, prescaler);
+      |  ^~~~~~~~~~~~~~~~~~~
+../src/blinky.c:99:2: warning: implicit declaration of function 'XTtcPs_SetInterval' [-Wimplicit-function-declaration]
+   99 |  XTtcPs_SetInterval(&ttc, interval);
+      |  ^~~~~~~~~~~~~~~~~~
+../src/blinky.c:100:2: warning: implicit declaration of function 'XTtcPs_SetOptions'; did you mean 'XUartPs_SetOptions'? [-Wimplicit-function-declaration]
+  100 |  XTtcPs_SetOptions(&ttc, XTTCPS_OPTION_INTERVAL_MODE);
+      |  ^~~~~~~~~~~~~~~~~
+      |  XUartPs_SetOptions
+../src/blinky.c:100:26: error: 'XTTCPS_OPTION_INTERVAL_MODE' undeclared (first use in this function)
+  100 |  XTtcPs_SetOptions(&ttc, XTTCPS_OPTION_INTERVAL_MODE);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/blinky.c:100:26: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [src/blinky.o] Error 1
+src/subdir.mk:33: recipe for target 'src/blinky.o' failed
+make: *** [all] Error 2
+makefile:33: recipe for target 'all' failed
 
-16:22:19 Build Finished (took 2s.987ms)
+19:03:01 Build Finished (took 1s.130ms)
 
