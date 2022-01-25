@@ -190,6 +190,7 @@ extern "C" {
  *				counter to hold the capture value until
  *				recognized.
  * XTC_EXT_COMPARE_OPTION	Enables the external compare output signal.
+ * XTC_PWM_ENABLE_OPTION    Enables PWM mode
  * </pre>
  */
 #define XTC_CASCADE_MODE_OPTION		0x00000080UL
@@ -199,6 +200,7 @@ extern "C" {
 #define XTC_INT_MODE_OPTION		0x00000008UL
 #define XTC_AUTO_RELOAD_OPTION		0x00000004UL
 #define XTC_EXT_COMPARE_OPTION		0x00000002UL
+#define XTC_PWM_ENABLE_OPTION		0x00000001UL
 /*@}*/
 
 /* Round division  */

@@ -1,58 +1,9 @@
 Nothing to build in platform 'module3_hw_wrapper'
 
-19:03:00 **** Build of configuration Debug for project module3_sw ****
+15:44:37 **** Incremental Build of configuration Debug for project module3_sw ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
  
 make --no-print-directory main-build
-Building file: ../src/blinky.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/blinky.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/thayerfs/home/f003j8y/ENGS62/Module3/workspace/module3_hw_wrapper/export/module3_hw_wrapper/sw/module3_hw_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/blinky.d" -MT"src/blinky.o" -o "src/blinky.o" "../src/blinky.c"
-../src/blinky.c:28:8: error: unknown type name 'XTtcPs'
-   28 | static XTtcPs ttc;
-      |        ^~~~~~
-../src/blinky.c:29:8: error: unknown type name 'XInterval'
-   29 | static XInterval interval;
-      |        ^~~~~~~~~
-../src/blinky.c: In function 'main':
-../src/blinky.c:94:2: error: unknown type name 'XTtcPs_Config'; did you mean 'XUartPs_Config'?
-   94 |  XTtcPs_Config *config = XTtcPs_LookupConfig(XPAR_XTTCPS_0_DEVICE_ID); // looks up dev config based on device id
-      |  ^~~~~~~~~~~~~
-      |  XUartPs_Config
-../src/blinky.c:94:26: warning: implicit declaration of function 'XTtcPs_LookupConfig'; did you mean 'XUartPs_LookupConfig'? [-Wimplicit-function-declaration]
-   94 |  XTtcPs_Config *config = XTtcPs_LookupConfig(XPAR_XTTCPS_0_DEVICE_ID); // looks up dev config based on device id
-      |                          ^~~~~~~~~~~~~~~~~~~
-      |                          XUartPs_LookupConfig
-../src/blinky.c:94:26: warning: initialization of 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
-../src/blinky.c:95:2: warning: implicit declaration of function 'XTtcPs_CfgInitialize'; did you mean 'XUartPs_CfgInitialize'? [-Wimplicit-function-declaration]
-   95 |  XTtcPs_CfgInitialize(&ttc, config, config->BaseAddress); // initializes XTtcPs instance
-      |  ^~~~~~~~~~~~~~~~~~~~
-      |  XUartPs_CfgInitialize
-../src/blinky.c:95:43: error: request for member 'BaseAddress' in something not a structure or union
-   95 |  XTtcPs_CfgInitialize(&ttc, config, config->BaseAddress); // initializes XTtcPs instance
-      |                                           ^~
-../src/blinky.c:97:2: warning: implicit declaration of function 'XTtcPs_CalcIntervalFromFreq' [-Wimplicit-function-declaration]
-   97 |  XTtcPs_CalcIntervalFromFreq(&ttc, 1, &interval, &prescaler);
-      |  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-../src/blinky.c:98:2: warning: implicit declaration of function 'XTtcPs_SetPrescaler' [-Wimplicit-function-declaration]
-   98 |  XTtcPs_SetPrescaler(&ttc, prescaler);
-      |  ^~~~~~~~~~~~~~~~~~~
-../src/blinky.c:99:2: warning: implicit declaration of function 'XTtcPs_SetInterval' [-Wimplicit-function-declaration]
-   99 |  XTtcPs_SetInterval(&ttc, interval);
-      |  ^~~~~~~~~~~~~~~~~~
-../src/blinky.c:100:2: warning: implicit declaration of function 'XTtcPs_SetOptions'; did you mean 'XUartPs_SetOptions'? [-Wimplicit-function-declaration]
-  100 |  XTtcPs_SetOptions(&ttc, XTTCPS_OPTION_INTERVAL_MODE);
-      |  ^~~~~~~~~~~~~~~~~
-      |  XUartPs_SetOptions
-../src/blinky.c:100:26: error: 'XTTCPS_OPTION_INTERVAL_MODE' undeclared (first use in this function)
-  100 |  XTtcPs_SetOptions(&ttc, XTTCPS_OPTION_INTERVAL_MODE);
-      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-../src/blinky.c:100:26: note: each undeclared identifier is reported only once for each function it appears in
-make[1]: *** [src/blinky.o] Error 1
-src/subdir.mk:33: recipe for target 'src/blinky.o' failed
-make: *** [all] Error 2
-makefile:33: recipe for target 'all' failed
-
-19:03:01 Build Finished (took 1s.130ms)
-
+make[1]: Nothing to be done for 'main-build'.

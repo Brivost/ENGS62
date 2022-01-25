@@ -24,3 +24,5 @@ platform clean
 platform generate
 platform config -updatehw {/thayerfs/home/f003j8y/ENGS62/Module3/workspace/module3/module3_hw_wrapper.xsa}
 platform generate -domains 
+platform clean
+platform generate

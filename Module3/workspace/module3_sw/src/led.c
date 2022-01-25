@@ -81,6 +81,9 @@ bool led_get(u32 led) {
 											//returns true if it's on,
 											//returns false if it's off
 	}
+	else if (led == 4){
+		return (XGpioPs_ReadPin(&port4, LED4_pin));
+	}
 	return LED_OFF;
 }
 

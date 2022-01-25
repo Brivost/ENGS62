@@ -18,19 +18,30 @@
 #include "xil_types.h"					/* u32, u16 etc */
 #include "platform.h"					/* ZYBOboard interface */
 #include "xparameters.h"				/* constants used by the hardware */
-//#include "xttcps.h" //should I be including this?
 
+#include "xttcps.h"
 #include "xgpio.h"
 #include "led.h"
 #include "gic.h"
 #include "io.h"
+#include "ttc.h"
 
-static XTtcPs ttc;
-static XInterval interval;
-static u8 prescaler;
+static bool OFF = TRUE; // says whether LED 4 is on or off
+static XTmrCtr tmrctr;
 
 void led_callback(u32 btn){
 	led_toggle(btn);
+}
+
+void ttc_callback(){
+	if (OFF){
+		led_set(4, LED_ON); // turn on LED4
+		OFF = FALSE;
+	}
+	else {
+		led_set(4, LED_OFF); //turn off LED4
+		OFF = TRUE;
+	}
 }
 
 /* Prompts for a single character from
@@ -77,37 +88,31 @@ int get_input(){
 
 
 int main() {
-	 /* 
-	  * set stdin unbuffered, forcing getchar to return immediately when
-	  * a character is typed.
-      */
-	 setvbuf(stdin,NULL,_IONBF,0);
-	 
-	 printf("[Hello]\n");
+	/*
+	 * set stdin unbuffered, forcing getchar to return immediately when
+	 * a character is typed.
+     */
+	setvbuf(stdin,NULL,_IONBF,0);
 
 	init_platform();
 
 	/* initialize the gic (c.f. gic.h) */
 	gic_init();
 
-	/* initialize triple time counter */
-	XTtcPs_Config *config = XTtcPs_LookupConfig(XPAR_XTTCPS_0_DEVICE_ID); // looks up dev config based on device id
-	XTtcPs_CfgInitialize(&ttc, config, config->BaseAddress); // initializes XTtcPs instance
-
-	XTtcPs_CalcIntervalFromFreq(&ttc, 1, &interval, &prescaler);
-	XTtcPs_SetPrescaler(&ttc, prescaler);
-	XTtcPs_SetInterval(&ttc, interval);
-	XTtcPs_SetOptions(&ttc, XTTCPS_OPTION_INTERVAL_MODE);
-
-
-
 	/* initialize led's 0-3 */
 	led_init();
 
+	/* set up interrupts & callbacks */
 	io_btn_init(led_callback);
 	io_sw_init(led_callback);
+	ttc_init(1, ttc_callback);
 
-	led_set(4, LED_ON);
+	/* start triple timer counter */
+	ttc_start();
+
+	XTmrCtr_Initialize(&tmrctr, XPAR_TMRCTR_0_DEVICE_ID);
+
+	printf("[Hello]\n");
 
 	 u32 input = 1;
 	 while(input != -1) {
@@ -126,8 +131,11 @@ int main() {
 
 	 led_set(ALL, LED_OFF); // turns LED's 0,1,2,3,4 off
 
+	 ttc_stop();
+
 	 io_btn_close();
 	 io_sw_close();
+	 ttc_close();
 
 	 /* close the gic (c.f. gic.h) */
 	 gic_close();
