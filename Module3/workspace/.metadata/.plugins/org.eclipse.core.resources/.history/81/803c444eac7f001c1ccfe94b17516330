@@ -1,0 +1,10 @@
+#pragma once
+
+#include <stdio.h>
+#include "xttcps.h"
+#include "xparameters.h"  	/* constants used by the hardware */
+#include "xil_types.h"		/* types used by xilinx */
+
+void servo_init(void);
+
+void servo_set(double dutycycle);

@@ -21,13 +21,15 @@
 
 #include "xttcps.h"
 #include "xgpio.h"
+#include "xtmrctr.h"
 #include "led.h"
 #include "gic.h"
 #include "io.h"
 #include "ttc.h"
+#include "servo.h"
 
 static bool OFF = TRUE; // says whether LED 4 is on or off
-static XTmrCtr tmrctr;
+//static XTmrCtr tmrctr;
 
 void led_callback(u32 btn){
 	led_toggle(btn);
@@ -83,7 +85,13 @@ int get_input(){
 		printf("\n[%c ",initial_char);
 		return 3; //1000 points to LED 3
 	}
-	return 5;
+	if (initial_char == 'a' && charcount == 1){ // increase dutycycle 0.25%
+		return 4;
+	}
+	if (initial_char == 's' && charcount == 1){ // decrease dutycycle 0.25%
+		return 5;
+	}
+	return 6;
 }
 
 
@@ -107,25 +115,43 @@ int main() {
 	io_sw_init(led_callback);
 	ttc_init(1, ttc_callback);
 
-	/* start triple timer counter */
+	/* start triple timer counter to blink led once per second*/
 	ttc_start();
 
-	XTmrCtr_Initialize(&tmrctr, XPAR_TMRCTR_0_DEVICE_ID);
+//	/* outputing square waveform */
+//	XTmrCtr_Initialize(&tmrctr, XPAR_AXI_TIMER_0_DEVICE_ID);
+//
+//	XTmrCtr_Stop(&tmrctr, 0);
+//	XTmrCtr_Stop(&tmrctr, 1);
+//
+//	XTmrCtr_SetOptions(&tmrctr, 0, XTC_DOWN_COUNT_OPTION | XTC_EXT_COMPARE_OPTION | XTC_PWM_ENABLE_OPTION );
+//	XTmrCtr_SetOptions(&tmrctr, 1, XTC_DOWN_COUNT_OPTION | XTC_EXT_COMPARE_OPTION | XTC_PWM_ENABLE_OPTION);
+//
+//	XTmrCtr_SetResetValue(&tmrctr, 0, 1000000); // period
+//	XTmrCtr_SetResetValue(&tmrctr, 1, 75000); // high time
+//
+//	XTmrCtr_Start(&tmrctr, 0);
+//	XTmrCtr_Start(&tmrctr, 1);
+
+	servo_init();
 
 	printf("[Hello]\n");
 
 	 u32 input = 1;
 	 while(input != -1) {
 		 input = get_input();
-		 if (input != 5){ // change LED's
-			 if(led_get(input)==LED_ON && input != -1){
+		 if (input <= 3 && input != -1){ // change LED's
+			 if(led_get(input)==LED_ON){
 				 printf("off]");
 			 }
-			 else if (led_get(input)==LED_OFF && input != -1){
+			 else if (led_get(input)==LED_OFF){
 				 printf("on]");
 			 }
 			 led_toggle(input);
 		 }
+//		 else if (input == 4 || input == 6){
+//			 pass;
+//		 }
 		 printf("\n");
 	 }
 

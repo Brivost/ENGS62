@@ -26,3 +26,4 @@ platform config -updatehw {/thayerfs/home/f003j8y/ENGS62/Module3/workspace/modul
 platform generate -domains 
 platform clean
 platform generate
+platform generate
