@@ -29,7 +29,7 @@
 #include "servo.h"
 
 static bool OFF = TRUE; // says whether LED 4 is on or off
-//static XTmrCtr tmrctr;
+static double dutycycle = 7.5; // initial duty cycle
 
 void led_callback(u32 btn){
 	led_toggle(btn);
@@ -52,46 +52,69 @@ void ttc_callback(){
  * returns 0 after q
  */
 int get_input(){
+
+	char str[60];
+	int i = 0;
+
 	printf(">");
+	fflush(stdout);
 
 	int c = getchar();
 	int initial_char = c;
+
 	int charcount = 0; //records number of characters entered
 
 	while (c != 13){ //check for return (ascii code 13)
 		printf("%c", c);
+
+		str[i] = c;
+		i++;
+
 		c = getchar();
+
 		if (c != 127){ //discard delete key entries
 			charcount++; //increment character count
 		}
 	}
 
+	// add null character because for some reason words > 3 characters
+	// does not add null character on its own
+	str[charcount] = '\0';
+
 	if(initial_char == 'q' && charcount == 1){
 		return -1;
 	}
-	if (initial_char == '0' && charcount == 1){ // toggle LED 0 if input is 0
+	else if (initial_char == '0' && charcount == 1){ // toggle LED 0 if input is 0
 		printf("\n[%c ",initial_char);
 		return 0; // 0001 points to LED 0
 	}
-	if (initial_char == '1' && charcount == 1){ // toggle LED 1 if input is 1
+	else if (initial_char == '1' && charcount == 1){ // toggle LED 1 if input is 1
 		printf("\n[%c ",initial_char);
 		return 1; //0010 points to LED 1
 	}
-	if (initial_char == '2' && charcount == 1){ // toggle LED 2 if input is 2
+	else if (initial_char == '2' && charcount == 1){ // toggle LED 2 if input is 2
 		printf("\n[%c ",initial_char);
 		return 2; //0100 points to LED 2
 	}
-	if (initial_char == '3' && charcount == 1){ // toggle LED 3 if input is 3
+	else if (initial_char == '3' && charcount == 1){ // toggle LED 3 if input is 3
 		printf("\n[%c ",initial_char);
 		return 3; //1000 points to LED 3
 	}
-	if (initial_char == 'a' && charcount == 1){ // increase dutycycle 0.25%
+	else if (initial_char == 'a' && charcount == 1){ // increase dutycycle 0.25%
 		return 4;
 	}
-	if (initial_char == 's' && charcount == 1){ // decrease dutycycle 0.25%
+	else if (initial_char == 's' && charcount == 1){ // decrease dutycycle 0.25%
 		return 5;
 	}
-	return 6;
+	else if (strcmp(str, "low") == 0 && charcount == 3){ // set dutycle to low setting
+		return 6;
+	}
+	else if (strcmp(str, "high") == 0 && charcount == 4){ // set dutycycle to high setting
+		return 7;
+	}
+
+	return 8;
+
 }
 
 
@@ -118,21 +141,7 @@ int main() {
 	/* start triple timer counter to blink led once per second*/
 	ttc_start();
 
-//	/* outputing square waveform */
-//	XTmrCtr_Initialize(&tmrctr, XPAR_AXI_TIMER_0_DEVICE_ID);
-//
-//	XTmrCtr_Stop(&tmrctr, 0);
-//	XTmrCtr_Stop(&tmrctr, 1);
-//
-//	XTmrCtr_SetOptions(&tmrctr, 0, XTC_DOWN_COUNT_OPTION | XTC_EXT_COMPARE_OPTION | XTC_PWM_ENABLE_OPTION );
-//	XTmrCtr_SetOptions(&tmrctr, 1, XTC_DOWN_COUNT_OPTION | XTC_EXT_COMPARE_OPTION | XTC_PWM_ENABLE_OPTION);
-//
-//	XTmrCtr_SetResetValue(&tmrctr, 0, 1000000); // period
-//	XTmrCtr_SetResetValue(&tmrctr, 1, 75000); // high time
-//
-//	XTmrCtr_Start(&tmrctr, 0);
-//	XTmrCtr_Start(&tmrctr, 1);
-
+	// sets up 7.5% square waveform
 	servo_init();
 
 	printf("[Hello]\n");
@@ -149,9 +158,26 @@ int main() {
 			 }
 			 led_toggle(input);
 		 }
-//		 else if (input == 4 || input == 6){
-//			 pass;
-//		 }
+		 else if (input == 4) {
+			 if (dutycycle < 10.5){ //mechanical endpoint
+				 dutycycle = dutycycle + 0.25;
+				 servo_set(dutycycle);
+			 }
+		 }
+		 else if (input == 5){
+			 if (dutycycle > 5.25) { //mechanical endpoint
+				 dutycycle = dutycycle - 0.25;
+				 servo_set(dutycycle);
+			 }
+		 }
+		 else if (input == 6){ // set servo to low
+			 dutycycle = 5.25;
+			 servo_set(dutycycle);
+		 }
+		 else if (input == 7){ // set servo to high
+			 dutycycle = 10.5;
+			 servo_set(dutycycle);
+		 }
 		 printf("\n");
 	 }
 
