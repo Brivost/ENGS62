@@ -1,0 +1,54 @@
+TRACE::2022-01-25.14:43:45::SCWBifWriter::Found the complete platform /thayerfs/home/f003j8y/ENGS62/Module3/workspace/module3_hw_wrapper/export/module3_hw_wrapper/module3_hw_wrapper.xpfm
+TRACE::2022-01-25.14:43:45::SCWBifWriter::hardware databse : module3_hw_wrapper
+TRACE::2022-01-25.14:43:45::SCWBifWriter::bitstream found in the design
+TRACE::2022-01-25.14:43:45::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2022-01-25.14:43:45::SCWBifWriter::proc type : 
+TRACE::2022-01-25.14:43:45::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2022-01-25.14:43:45::SCWBifWriter::Device type is : zynq
+TRACE::2022-01-25.14:43:45::SCWBifWriter::Writing BIF to file : /thayerfs/home/f003j8y/ENGS62/Module3/workspace/module3_sw_system/Debug/system.bif
+TRACE::2022-01-25.14:43:45::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2022-01-30.12:33:11::SCWBifWriter::Found the complete platform /thayerfs/home/f003j8y/ENGS62/Module3/workspace/module3_hw_wrapper/export/module3_hw_wrapper/module3_hw_wrapper.xpfm
+TRACE::2022-01-30.12:33:11::SCWBifWriter::hardware databse : module3_hw_wrapper_0
+TRACE::2022-01-30.12:33:11::SCWBifWriter::bitstream found in the design
+TRACE::2022-01-30.12:33:11::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2022-01-30.12:33:11::SCWBifWriter::proc type : 
+TRACE::2022-01-30.12:33:11::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2022-01-30.12:33:11::SCWBifWriter::Device type is : zynq
+TRACE::2022-01-30.12:33:11::SCWBifWriter::Writing BIF to file : /thayerfs/home/f003j8y/ENGS62/Module3/workspace/module3_sw_system/Debug/system.bif
+TRACE::2022-01-30.12:33:11::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2022-01-30.12:36:51::SCWBifWriter::Found the complete platform /thayerfs/home/f003j8y/ENGS62/Module3/workspace/module3_hw_wrapper/export/module3_hw_wrapper/module3_hw_wrapper.xpfm
+TRACE::2022-01-30.12:36:52::SCWBifWriter::hardware databse : module3_hw_wrapper_0
+TRACE::2022-01-30.12:36:52::SCWBifWriter::bitstream found in the design
+TRACE::2022-01-30.12:36:52::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2022-01-30.12:36:52::SCWBifWriter::proc type : 
+TRACE::2022-01-30.12:36:52::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2022-01-30.12:36:52::SCWBifWriter::Device type is : zynq
+TRACE::2022-01-30.12:36:52::SCWBifWriter::Writing BIF to file : /thayerfs/home/f003j8y/ENGS62/Module3/workspace/module3_sw_system/Debug/system.bif
+TRACE::2022-01-30.12:36:52::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2022-01-30.12:39:10::SCWBifWriter::Found the complete platform /thayerfs/home/f003j8y/ENGS62/Module3/workspace/module3_hw_wrapper/export/module3_hw_wrapper/module3_hw_wrapper.xpfm
+TRACE::2022-01-30.12:39:10::SCWBifWriter::hardware databse : module3_hw_wrapper_1
+TRACE::2022-01-30.12:39:10::SCWBifWriter::bitstream found in the design
+TRACE::2022-01-30.12:39:10::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2022-01-30.12:39:10::SCWBifWriter::proc type : 
+TRACE::2022-01-30.12:39:10::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2022-01-30.12:39:10::SCWBifWriter::Device type is : zynq
+TRACE::2022-01-30.12:39:10::SCWBifWriter::Writing BIF to file : /thayerfs/home/f003j8y/ENGS62/Module3/workspace/module3_sw_system/Debug/system.bif
+TRACE::2022-01-30.12:39:10::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2022-01-30.12:43:18::SCWBifWriter::Found the complete platform /thayerfs/home/f003j8y/ENGS62/Module3/workspace/module3_hw_wrapper/export/module3_hw_wrapper/module3_hw_wrapper.xpfm
+TRACE::2022-01-30.12:43:18::SCWBifWriter::hardware databse : module3_hw_wrapper_5
+TRACE::2022-01-30.12:43:18::SCWBifWriter::bitstream found in the design
+TRACE::2022-01-30.12:43:18::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2022-01-30.12:43:18::SCWBifWriter::proc type : 
+TRACE::2022-01-30.12:43:18::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2022-01-30.12:43:18::SCWBifWriter::Device type is : zynq
+TRACE::2022-01-30.12:43:18::SCWBifWriter::Writing BIF to file : /thayerfs/home/f003j8y/ENGS62/Module3/workspace/module3_sw_system/Debug/system.bif
+TRACE::2022-01-30.12:43:18::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2022-01-30.14:02:56::SCWBifWriter::Found the complete platform /thayerfs/home/f003j8y/ENGS62/Module3/workspace/module3_hw_wrapper/export/module3_hw_wrapper/module3_hw_wrapper.xpfm
+TRACE::2022-01-30.14:02:56::SCWBifWriter::hardware databse : module3_hw_wrapper_5
+TRACE::2022-01-30.14:02:56::SCWBifWriter::bitstream found in the design
+TRACE::2022-01-30.14:02:56::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2022-01-30.14:02:56::SCWBifWriter::proc type : 
+TRACE::2022-01-30.14:02:56::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2022-01-30.14:02:56::SCWBifWriter::Device type is : zynq
+TRACE::2022-01-30.14:02:56::SCWBifWriter::Writing BIF to file : /thayerfs/home/f003j8y/ENGS62/Module3/workspace/module3_sw_system/Debug/system.bif
+TRACE::2022-01-30.14:02:56::SCWBifWriter::Writing the Zynq Baremetal bif 
