@@ -27,24 +27,38 @@
 #include "io.h"
 #include "ttc.h"
 #include "servo.h"
+#include "adc.h"
 
-#include "xadcps.h"
-XAdcPs adc;
+#define LOW 5.25
+#define HIGH 10.5
 
 static bool OFF = TRUE; // says whether LED 4 is on or off
 static double dutycycle = 7.5; // initial duty cycle
 
-void led_callback(u32 btn){
+void led_callback_btn(u32 btn){
 	led_toggle(btn);
 	if(btn==0){
-		 float temp = XAdcPs_RawToTemperature(XAdcPs_GetAdcData(&adc, XADCPS_CH_TEMP));
-		 printf("[Temp=%.2fc]\n", temp);
+		 float temp = adc_get_temp();
+		 printf("[Temp=%.2fc]\n>", temp);
 	}
 	if (btn==1){
-		 float voltage = XAdcPs_RawToVoltage(XAdcPs_GetAdcData(&adc, XADCPS_CH_VCCINT));
-		 printf("[VccInt=%.2fv]\n", voltage);
+		 float voltage = adc_get_vccint();
+		 printf("[VccInt=%.2fv]\n>", voltage);
+	}
+	if (btn==2){
+		float pot = adc_get_pot();
+		printf("[Pot=%.2fv]\n>", pot);
+	}
+	if (btn==3){
+		float pot = adc_get_pot();
+		dutycycle = (HIGH-LOW)*pot + LOW;
+		servo_set(dutycycle);
 	}
 	fflush(stdout);
+}
+
+void led_callback_sw(u32 btn){
+	led_toggle(btn);
 }
 
 void ttc_callback(){
@@ -146,8 +160,8 @@ int main() {
 	led_init();
 
 	/* set up interrupts & callbacks */
-	io_btn_init(led_callback);
-	io_sw_init(led_callback);
+	io_btn_init(led_callback_btn);
+	io_sw_init(led_callback_sw);
 	ttc_init(1, ttc_callback);
 
 	/* start triple timer counter to blink led once per second*/
@@ -156,13 +170,8 @@ int main() {
 	// sets up 7.5% square waveform
 	servo_init();
 
-	// Set up XADC
-	XAdcPs_Config *config = XAdcPs_LookupConfig(XPAR_XADCPS_0_DEVICE_ID);
-	XAdcPs_CfgInitialize(&adc, config, config->BaseAddress);
-	XAdcPs_SetSequencerMode(&adc, XADCPS_SEQ_MODE_SAFE);
-	XAdcPs_SetAlarmEnables(&adc, 0);
-	XAdcPs_SetSeqChEnables(&adc, XADCPS_SEQ_CH_VCCINT | XADCPS_SEQ_CH_TEMP | XADCPS_SEQ_CH_AUX13);
-
+	// Set up ADC
+	adc_init();
 
 	printf("[Hello]\n");
 
@@ -183,23 +192,30 @@ int main() {
 				 dutycycle = dutycycle + 0.25;
 				 servo_set(dutycycle);
 			 }
+			 else {
+				 printf("[Endpoint reached]");
+			 }
 		 }
 		 else if (input == 5){
 			 if (dutycycle > 5.25) { //mechanical endpoint
 				 dutycycle = dutycycle - 0.25;
 				 servo_set(dutycycle);
 			 }
+			 else {
+				 printf(" [Endpoint reached]");
+			 }
 		 }
 		 else if (input == 6){ // set servo to low
-			 dutycycle = 5.25;
+			 dutycycle = LOW;
 			 servo_set(dutycycle);
 		 }
 		 else if (input == 7){ // set servo to high
-			 dutycycle = 10.5;
+			 dutycycle = HIGH;
 			 servo_set(dutycycle);
 		 }
 		 printf("\n");
 	 }
+	 printf("[Done]");
 
 	 led_set(ALL, LED_OFF); // turns LED's 0,1,2,3,4 off
 

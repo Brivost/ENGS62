@@ -30,7 +30,7 @@ void servo_init(void) {
 void servo_set(double dutycycle){
 
 	// only move motor within endpoints
-	if (dutycycle >= 2.5 && dutycycle <= 10.5) {
+	if (dutycycle >= 5.25 && dutycycle <= 10.5) {
 		XTmrCtr_Stop(&tmrctr, 0);
 		XTmrCtr_Stop(&tmrctr, 1);
 
