@@ -1,0 +1,51 @@
+18:10:36 **** Incremental Build of configuration Debug for project module5_sw ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+ 
+make --no-print-directory main-build
+Building file: ../src/shmoney.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/shmoney.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/thayerfs/home/f003j8y/ENGS62/Module5/workspace/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/shmoney.d" -MT"src/shmoney.o" -o "src/shmoney.o" "../src/shmoney.c"
+../src/shmoney.c: In function 'handler_func1':
+../src/shmoney.c:149:7: warning: unused variable 'number' [-Wunused-variable]
+  149 |  char number[100];
+      |       ^~~~~~
+At top level:
+../src/shmoney.c:64:27: warning: 'respingle_p' defined but not used [-Wunused-variable]
+   64 | static update_response_t *respingle_p = &respingle;
+      |                           ^~~~~~~~~~~
+../src/shmoney.c:35:13: warning: 'OFF' defined but not used [-Wunused-variable]
+   35 | static bool OFF = TRUE; // says whether LED 4 is on or off
+      |             ^~~
+../src/shmoney.c:34:13: warning: 'str' defined but not used [-Wunused-variable]
+   34 | static char str[100];
+      |             ^~~
+../src/shmoney.c:32:11: warning: 'bigbuffer' defined but not used [-Wunused-variable]
+   32 | static u8 bigbuffer[100];
+      |           ^~~~~~~~~
+../src/shmoney.c:31:12: warning: 'requingle_value' defined but not used [-Wunused-variable]
+   31 | static int requingle_value;
+      |            ^~~~~~~~~~~~~~~
+../src/shmoney.c:29:12: warning: 'divider' defined but not used [-Wunused-variable]
+   29 | static int divider = 8;
+      |            ^~~~~~~
+../src/shmoney.c:28:12: warning: 'binary' defined but not used [-Wunused-variable]
+   28 | static int binary = 0;
+      |            ^~~~~~
+Finished building: ../src/shmoney.c
+ 
+Building target: module5_sw.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L/thayerfs/home/f003j8y/ENGS62/Module5/workspace/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/bsplib/lib -o "module5_sw.elf"  ./src/adc.o ./src/gic.o ./src/io.o ./src/led.o ./src/platform.o ./src/servo.o ./src/shmoney.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: module5_sw.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size module5_sw.elf  |tee "module5_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81143	   3468	  23344	 107955	  1a5b3	module5_sw.elf
+Finished building: module5_sw.elf.size
+ 
+
+18:10:38 Build Finished (took 1s.738ms)
+
