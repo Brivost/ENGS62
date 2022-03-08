@@ -1,0 +1,372 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <string.h>
+#include "platform.h"
+#include "xil_printf.h"
+
+#include "gic.h"
+#include "led.h"
+#include "io.h"
+#include "servo.h"
+#include "adc.h"
+#include "ttc.h"
+#include "wifi.h"
+
+// Wifi defines
+#define CONFIGURE 0
+#define PING 1
+#define UPDATE 2
+#define UPDATE_FLAG 0
+
+// Servo defines
+#define LOW 5.25
+#define HIGH 10.5
+
+// RGB light defines
+#define RED 4
+#define GREEN 2
+#define YELLOW 6
+#define BLUE 1
+
+// State machine defines
+#define TRAFFIC 6
+#define SWITCH_LIGHT 7
+#define PEDESTRIAN 8
+#define TRAIN 9
+#define MAINTENANCE 10
+#define ON 1
+#define OFF 0
+#define TO_RED 0
+#define TO_GREEN 1
+
+// State machine controls
+static int state;
+static int previous_state;
+static int switch_direction = 0;
+static int timer_finished_flag = 0;
+static int timer_running_flag = 0;
+static int button_flag = 0;
+static int timer_count = 0;
+static int blue_light_status = OFF;
+static int maint_switch = ON;
+static int train_switch = ON;
+static int train_arriving = OFF;
+static int wifi_train_flag = ON;
+static bool done = FALSE;
+static int mode;
+static double dutycycle = HIGH; // initial duty cycle
+
+void btn_callback(u32 btn){
+	printf("In btn callback\n");
+	if (btn == 0 || btn == 1){
+		button_flag = 1;
+	}
+//	if (btn == 0){
+//		mode = CONFIGURE;
+//		printf("< allows entry to wifi cmd mode >\n");
+//	}
+	// Send ping
+	if (btn == 2){
+		led_set(ALL, LED_OFF);
+		led_toggle(btn);
+		printf("[PING]\n");
+		send_ping(PING);
+	}
+//	// Send update message
+//	else if (btn == 2){
+//		led_set(ALL, LED_OFF);
+//		led_toggle(btn);
+//		printf("[UPDATE]\n");
+//		mode = UPDATE;
+//	}
+	// Exit program if btn 3 pushed
+	if (btn == 3){
+		done = TRUE;
+	}
+}
+
+void sw_callback(u32 sw){
+	printf("In sw callback\n");
+
+	// Enter or exit maintenance mode
+	if (sw == 0){
+		if (maint_switch == ON){
+			previous_state = state;
+			state = MAINTENANCE;
+			maint_switch = OFF;
+			servo_set(HIGH);
+		}
+		else {
+			if (train_arriving == ON){
+				state = TRAIN;
+			}
+			else{
+				state = previous_state;
+				servo_set(LOW);
+			}
+			maint_switch = ON;
+		}
+	}
+
+	// Train arriving or leaving
+	if (sw == 3){
+		if (train_switch == ON){
+			printf("In train mode\n");
+			train_arriving = ON;
+			train_switch = OFF;
+			wifi_train_flag = OFF;
+		}
+		else {
+			train_switch = ON;
+			train_arriving = OFF;
+			wifi_train_flag = ON;
+		}
+	}
+}
+
+void ttc_callback(){
+
+	printf("Timer count = %d\n", timer_count);
+	printf("State: %d\n", state);
+
+	// Send polling wifi update message
+
+	// Find out if train is arriving from wifi or not
+	int wifi_value = send_update(UPDATE);
+
+	if (wifi_train_flag == ON){
+		// Switch out of train mode
+		if (wifi_value == 0){
+			if (state == TRAIN){
+				train_arriving = OFF;
+			}
+		}
+		// Switch into train mode
+		else if (wifi_value == 1){
+			if (state != MAINTENANCE){
+				train_arriving = ON;
+			}
+		}
+	}
+	// Switch out of maintenance
+	else if (wifi_value == 2){
+		if (state == MAINTENANCE){
+			state = previous_state;
+			servo_set(LOW);
+		}
+	}
+	// Switch into maintenance
+	else if (wifi_value == 3){
+		if (state != MAINTENANCE) {
+			previous_state = state;
+			state = MAINTENANCE;
+			servo_set(HIGH);
+		}
+	}
+
+
+	// Count to 10 seconds while in traffic or pedestrian
+	if (state == TRAFFIC || state == PEDESTRIAN){
+		if (timer_count < 10) {
+			timer_count++;
+		}
+	}
+	// Reset timer at 10 seconds, or reset timer every second if in maintenance (to flash blue light 1/sec)
+	if (timer_count == 10 || (state != TRAFFIC && state != PEDESTRIAN)) {
+		timer_finished_flag = 1;
+		timer_count = 0;
+	}
+}
+
+int main(void) {
+
+    init_platform();
+
+    gic_init();
+
+    led_init();
+
+	/* set up interrupts & callbacks */
+	io_btn_init(btn_callback);
+	io_sw_init(sw_callback);
+
+	// sets up 7.5% square waveform
+	servo_init();
+
+	// Set up ADC
+	adc_init();
+
+	// Set up wifi
+	wifi_init();
+
+    // Set initial state
+    state = TRAFFIC;
+
+    printf("[hello]\n");
+
+    servo_set(LOW);
+
+    while(!done){
+    	if (state==TRAFFIC){
+    		RGB_set(GREEN);
+    		if (train_arriving == ON){
+    			servo_set(HIGH);
+    			state = TRAIN;
+    			ttc_stop();
+    			timer_running_flag = 0;
+    			timer_finished_flag = 0;
+    			button_flag = 0;
+    		}
+    		else if(timer_running_flag == 0){
+    			printf("In traffic\n");
+    			timer_running_flag = 1;
+    			button_flag = 0;
+    			ttc_init(1, ttc_callback);
+    			ttc_start();
+			}
+    		else if(timer_finished_flag == 1 && button_flag == 1){
+    			ttc_stop();
+    			state = SWITCH_LIGHT;
+    			timer_finished_flag = 0;
+    			button_flag = 0;
+    			timer_running_flag=0;
+    			switch_direction = TO_RED;
+    		}
+    	}
+    	else if (state==SWITCH_LIGHT){
+			RGB_set(YELLOW);
+    		if (train_arriving == ON){
+    			servo_set(HIGH);
+    			state = TRAIN;
+    			ttc_stop();
+    			timer_running_flag = 0;
+    			timer_finished_flag = 0;
+    			button_flag = 0;
+    		}
+    		else if(timer_running_flag == 0){
+				printf("In switch light\n");
+				timer_running_flag = 1;
+				ttc_init(1, ttc_callback);
+				ttc_start();
+			}
+			else if(timer_finished_flag == 1 && switch_direction == TO_RED){
+				ttc_stop();
+				timer_finished_flag = 0;
+				state = PEDESTRIAN;
+				timer_running_flag = 0;
+			}
+			else if(timer_finished_flag == 1 && switch_direction == TO_GREEN){
+				ttc_stop();
+				timer_finished_flag = 0;
+				state = TRAFFIC;
+				timer_running_flag = 0;
+			}
+    	}
+    	else if (state == PEDESTRIAN){
+    		RGB_set(RED);
+    		if (train_arriving == ON){
+    			servo_set(HIGH);
+    			state = TRAIN;
+    			ttc_stop();
+    			timer_running_flag = 0;
+    			timer_finished_flag = 0;
+    			button_flag = 0;
+    		}
+    		else if(timer_running_flag == 0){
+    			printf("In pedestrian\n");
+				timer_running_flag = 1;
+				ttc_init(1, ttc_callback);
+				ttc_start();
+			}
+    		else if(timer_finished_flag == 1){
+				ttc_stop();
+				timer_finished_flag = 0;
+				state = SWITCH_LIGHT;
+				switch_direction = TO_GREEN;
+				timer_running_flag = 0;
+			}
+    	}
+    	else if (state == MAINTENANCE){
+    		float pot = adc_get_pot();
+    		if(timer_running_flag == 0){
+    			printf("In maintenance\n");
+				timer_running_flag = 1;
+				ttc_init(1, ttc_callback);
+				ttc_start();
+	    		if (pot >= 0.5 && dutycycle <= 7.5){
+	    			printf("Setting servo high\n");
+	    			dutycycle = HIGH;
+	    			servo_set(HIGH);
+	    		}
+	    		else if (pot < 0.5 && dutycycle > 7.5){
+	    			printf("Setting servo low\n");
+	    			dutycycle = LOW;
+	    			servo_set(LOW);
+	    		}
+			}
+    		else if(timer_finished_flag == 1){
+				ttc_stop();
+				timer_finished_flag = 0;
+				timer_running_flag = 0;
+	    		if (pot >= 0.5 && dutycycle <= 7.5){
+	    			printf("Setting servo high\n");
+	    			dutycycle = HIGH;
+	    			servo_set(HIGH);
+	    		}
+	    		else if (pot < 0.5 && dutycycle > 7.5){
+	    			printf("Setting servo low\n");
+	    			dutycycle = LOW;
+	    			servo_set(LOW);
+	    		}
+	    		if (blue_light_status == OFF){
+	    			RGB_set(BLUE);
+	    			blue_light_status = ON;
+	    		}
+	    		else {
+	    			RGB_set(OFF);
+	    			blue_light_status = OFF;
+	    		}
+			}
+    	}
+    	else if (state == TRAIN){
+    		RGB_set(RED);
+    		timer_count = 0;
+    		if (timer_running_flag == 0){
+    			ttc_init(1, ttc_callback);
+    			ttc_start();
+    			timer_running_flag = 1;
+    		}
+    		else if (timer_finished_flag == 1){
+    			ttc_stop();
+    			timer_finished_flag = 0;
+    			timer_running_flag = 0;
+    		}
+    		if (train_arriving == OFF){
+    			if (maint_switch == OFF){
+    				state = MAINTENANCE;
+    			}
+    			else {
+    				state = PEDESTRIAN;
+    				servo_set(LOW);
+    			}
+    		}
+    	}
+    }
+    printf("\n[done]\n");
+    sleep(1);
+
+	led_set(ALL, LED_OFF); // turns LED's 0,1,2,3,4 off
+	RGB_set(OFF);
+
+    io_btn_close();
+    io_sw_close();
+    ttc_close();
+
+    wifi_close();
+
+    gic_close();
+
+    cleanup_platform();
+    return 0;
+}
