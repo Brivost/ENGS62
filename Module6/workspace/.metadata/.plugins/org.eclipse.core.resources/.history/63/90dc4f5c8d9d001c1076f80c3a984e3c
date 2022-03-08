@@ -1,0 +1,11 @@
+#pragma once
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "xuartps.h"
+
+void wifi_init();
+
+void send_ping();
+
+void wifi_close();

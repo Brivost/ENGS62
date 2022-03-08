@@ -1,0 +1,11 @@
+verilog xil_defaultlib --include "/thayerfs/apps/xilinx/Vivado/current/data/xilinx_vip/include" --include "../../../../module6.gen/sources_1/bd/module6_hw/ipshared/ec67/hdl" --include "../../../../module6.gen/sources_1/bd/module6_hw/ipshared/3007/hdl" \
+"../../../bd/module6_hw/ip/module6_hw_processing_system7_0_0/sim/module6_hw_processing_system7_0_0.v" \
+"../../../bd/module6_hw/ip/module6_hw_xbar_0/sim/module6_hw_xbar_0.v" \
+"../../../bd/module6_hw/ip/module6_hw_xlconcat_0_0/sim/module6_hw_xlconcat_0_0.v" \
+"../../../bd/module6_hw/ip/module6_hw_xadc_wiz_0_0/module6_hw_xadc_wiz_0_0.v" \
+"../../../bd/module6_hw/sim/module6_hw.v" \
+"../../../bd/module6_hw/ip/module6_hw_auto_pc_0/sim/module6_hw_auto_pc_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

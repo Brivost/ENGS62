@@ -1,0 +1,28 @@
+15:35:21 **** Incremental Build of configuration Debug for project module6_sw ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+ 
+make --no-print-directory main-build
+Building file: ../src/shmoney.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/shmoney.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/thayerfs/home/f003j8y/ENGS62/Module6/workspace/module6_hw_wrapper/export/module6_hw_wrapper/sw/module6_hw_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/shmoney.d" -MT"src/shmoney.o" -o "src/shmoney.o" "../src/shmoney.c"
+../src/shmoney.c:57:12: warning: 'mode' defined but not used [-Wunused-variable]
+   57 | static int mode;
+      |            ^~~~
+Finished building: ../src/shmoney.c
+ 
+Building target: module6_sw.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L/thayerfs/home/f003j8y/ENGS62/Module6/workspace/module6_hw_wrapper/export/module6_hw_wrapper/sw/module6_hw_wrapper/standalone_ps7_cortexa9_0/bsplib/lib -o "module6_sw.elf"  ./src/adc.o ./src/gic.o ./src/io.o ./src/led.o ./src/platform.o ./src/servo.o ./src/shmoney.o ./src/ttc.o ./src/wifi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: module6_sw.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size module6_sw.elf  |tee "module6_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  87095	   3532	  23440	 114067	  1bd93	module6_sw.elf
+Finished building: module6_sw.elf.size
+ 
+
+15:35:55 Build Finished (took 33s.772ms)
+
