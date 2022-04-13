@@ -1,3 +1,3 @@
 # ENGS62
 
-This repository includes software modules for ENGS62: Microcontrollers
+Microcontroller hardware and software for Zybo Z7-10 development board
